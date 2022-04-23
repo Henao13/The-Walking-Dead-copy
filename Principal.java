@@ -206,7 +206,6 @@ public class Principal
                     while(itr2.hasNext())
                     {
                         Ubicacion ubicacion= itr2.next();
-                        Collections.sort(ubicaciones);
                         if(cantMin==0)
                         {
                             cantMin=ubicacion.getCantidad();
