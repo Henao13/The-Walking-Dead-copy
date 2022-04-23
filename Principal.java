@@ -218,7 +218,7 @@ public class Principal
                         }
                         System.out.println(ubicacion.getNombre()+" " +ubicacion.getCantidad());
                     }
-                    
+                     
                     break;
                         
                     
@@ -247,14 +247,14 @@ public class Principal
                         if(cantMax==0)
                         {
                             cantMax=ubicacion.getCantidad();
-                            ubicacionMin=ubicacion;
+                            ubicacionMax=ubicacion;
                         }
                         else if(cantMax>ubicacion.getCantidad())
                         {
-                            ubicacionMin=ubicacion;
+                            ubicacionMax=ubicacion;
                             ubicacion.getCantidad();
                         }
-                        System.out.println(ubicacion.getNombre());
+                        System.out.println(ubicacion.getNombre()+" "+cantMax);
                     }
 
             }  
