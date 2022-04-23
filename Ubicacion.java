@@ -29,7 +29,18 @@ public class Ubicacion
     {
         return this.nombre;
     }
-    
+    public void setNombre(String nom)
+    {
+        this.nombre=nom;
+    }
+    public void setNombre(int can)
+    {
+        this.cantidadZ=can;
+    }    
+    public void setDistancia(float dist)
+    {
+        this.distancia=dist;
+    }    
 
     
 }
