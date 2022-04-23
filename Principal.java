@@ -3,6 +3,7 @@ import java.util.ArrayList;
 import java.util.Iterator;
 import java.util.Random;
 import java.util.*;
+import java.util.Collections;
 
 
 public class Principal
@@ -146,18 +147,22 @@ public class Principal
     
                    System.out.println("Zombies que nacieron después del 2000");
                    System.out.println();
-                   Zombie zombie= itr.next();
-                   if(zombie.getNacimiento()>2000) 
-                  {
-                     System.out.println("Nombre="+zombie.getNombre()+" F. Nac.="+zombie.getNacimiento());
-                  }
+                   itr=zombies.iterator();
+                   while(itr.hasNext())
+                   {
+                       Zombie zombie= itr.next();
+                       if(zombie.getNacimiento()>2000) 
+                       {
+                         System.out.println("Nombre="+zombie.getNombre()+" F. Nac.="+zombie.getNacimiento());
+                       }
 
-                     break; 
+                   }
+                       break; 
                 case 6:    
                    itr = zombies.iterator();
                    while (itr.hasNext()) 
                    {
-                        zombie= itr.next();
+                        Zombie zombie= itr.next();
                         zombie.splitSalud();
                     }
                     System.out.println("Salud disminuida");
@@ -197,9 +202,11 @@ public class Principal
                     int cantMin=0;
                     Ubicacion ubicacionMin;
                     itr2= ubicaciones.iterator();
+                    
                     while(itr2.hasNext())
                     {
                         Ubicacion ubicacion= itr2.next();
+                        Collections.sort(ubicaciones);
                         if(cantMin==0)
                         {
                             cantMin=ubicacion.getCantidad();
@@ -251,6 +258,6 @@ public class Principal
 
             }  
         }              
-    }
+    }  
 }
        
