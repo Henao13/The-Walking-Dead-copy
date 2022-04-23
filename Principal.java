@@ -37,19 +37,19 @@ public class Principal
    public static void printMenu()
    {
        System.out.println("Ingrese una opción:");
-       System.out.println("-0 si quiere cerrar el programa");
-       System.out.println("-1 para registrar un zombie");
-       System.out.println("-2 ver la lista de zombies");
-       System.out.println("-3 para consultar la cantidad de zombies registrados");
-       System.out.println("-4 para consultar los zombies con tipo de sangre O+ o AB+");
-       System.out.println("-5 para consultar los zombies que nacieron después del 2000");
-       System.out.println("-6 disminuir a la mitad la salud de los zombies"); 
-       System.out.println("-7 para agregar una ubicación");
-       System.out.println("-8 para consultar las ubicaciones");
-       System.out.println("-9 para consultar la ubicación más segura de la ciudad");
-       System.out.println("-10 para consultar las ubicaciones de la ciudad según distancia");
-       System.out.println("-11 frase sobre zombie");
-       System.out.println("-12 Zombie mas Saludable");
+       System.out.println("-0 Si quiere cerrar el programa");
+       System.out.println("-1 Para registrar un zombie");
+       System.out.println("-2 Ver la lista de zombies");
+       System.out.println("-3 Para consultar la cantidad de zombies registrados");
+       System.out.println("-4 Para consultar los zombies con tipo de sangre O+ o AB+");
+       System.out.println("-5 Para consultar los zombies que nacieron después del 2000");
+       System.out.println("-6 Disminuir a la mitad la salud de los zombies"); 
+       System.out.println("-7 Para agregar una ubicación");
+       System.out.println("-8 Para consultar las ubicaciones");
+       System.out.println("-9 Para consultar la ubicación más segura de la ciudad");
+       System.out.println("-10 Para consultar las ubicaciones de la ciudad según distancia");
+       System.out.println("-11 Frase sobre zombie");
+       System.out.println("-12 Ubicacion menos segura");
        System.out.println();
    }    
    
