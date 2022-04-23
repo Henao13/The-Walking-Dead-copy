@@ -1,0 +1,25 @@
+#BlueJ class context
+comment0.target=Zombie
+comment1.params=
+comment1.target=Zombie()
+comment10.params=san
+comment10.target=void\ setSangre(java.lang.String)
+comment11.params=
+comment11.target=void\ splitSalud()
+comment2.params=nom\ san\ nac\ sal
+comment2.target=Zombie(java.lang.String,\ java.lang.String,\ int,\ int)
+comment3.params=
+comment3.target=int\ getSalud()
+comment4.params=
+comment4.target=int\ getNacimiento()
+comment5.params=
+comment5.target=java.lang.String\ getNombre()
+comment6.params=
+comment6.target=java.lang.String\ getSangre()
+comment7.params=nac
+comment7.target=void\ setNacimiento(int)
+comment8.params=sal
+comment8.target=void\ setSalud(int)
+comment9.params=nom
+comment9.target=void\ setNombre(java.lang.String)
+numComments=12

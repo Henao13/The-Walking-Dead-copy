@@ -1,0 +1,13 @@
+#BlueJ class context
+comment0.target=Ubicacion
+comment1.params=
+comment1.target=Ubicacion()
+comment2.params=nom\ dist\ can
+comment2.target=Ubicacion(java.lang.String,\ float,\ int)
+comment3.params=
+comment3.target=int\ getCantidad()
+comment4.params=
+comment4.target=float\ getDistancia()
+comment5.params=
+comment5.target=java.lang.String\ getNombre()
+numComments=6
