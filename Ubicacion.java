@@ -1,6 +1,6 @@
 public class Ubicacion
 {
-    private String nombre;
+    private String nombreU;
     private int cantidadZ;
     private float distancia;
     
@@ -13,7 +13,7 @@ public class Ubicacion
     {
         this.cantidadZ= can;
         this.distancia=dist;
-        this.nombre= nom;
+        this.nombreU= nom;
     }
     
     
@@ -27,11 +27,11 @@ public class Ubicacion
     }
     public String getNombre()
     {
-        return this.nombre;
+        return this.nombreU;
     }
     public void setNombre(String nom)
     {
-        this.nombre=nom;
+        this.nombreU=nom;
     }
     public void setNombre(int can)
     {

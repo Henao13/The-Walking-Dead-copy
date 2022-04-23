@@ -76,7 +76,8 @@ public class Principal
        
        int nacimiento;
        int salud;
-       String nombre;
+       String nombreU;
+       String nombreZ;
        String sangre;
        float distancia;
        int cantidadZ;
@@ -90,6 +91,7 @@ public class Principal
        while(x!=0)
        {
            x=s1.nextInt();
+           String str1=s1.nextLine();
            switch(x)
            {
                 case 0:
@@ -98,8 +100,7 @@ public class Principal
                 case 1:
                    System.out.println();
                    System.out.println("Ingrese el nombre del zombie:");
-                   s1.next();
-                   nombre = s1.nextLine();
+                   nombreZ = s1.nextLine();
                    
                    System.out.println("Ingrese la salud del zombie:");
                    salud=s1.nextInt();
@@ -108,7 +109,7 @@ public class Principal
                    sangre = s1.nextLine();
                    System.out.println("Ingrese año de nacimiento (yyyy):");
                    nacimiento = s1.nextInt();
-                   zombies.add(new Zombie(nombre, sangre, nacimiento, salud));
+                   zombies.add(new Zombie(nombreZ, sangre, nacimiento, salud));
                    System.out.println("zombie registrado. gracias");
                    break;
                
@@ -120,7 +121,7 @@ public class Principal
                     while (itr.hasNext()) 
                     {
                         Zombie zombie= itr.next();
-                        System.out.println("Nombre="+zombie.getNombre()+" Salud="+zombie.getSalud()+" T. Sangre="+zombie.getSangre()+" F. Nac.="+zombie.getNacimiento());
+                        System.out.println("Nombre="+zombie.getNombreZ()+" Salud="+zombie.getSalud()+" T. Sangre="+zombie.getSangre()+" F. Nac.="+zombie.getNacimiento());
                     }
 
                     break;
@@ -139,7 +140,7 @@ public class Principal
                         Zombie zombie = itr.next();
                         if(zombie.getSangre().equals("O+")||zombie.getSangre().equals("AB+")) 
                         {
-                            System.out.println("Nombre="+zombie.getNombre()+" Salud="+zombie.getSalud()+" T. Sangre="+zombie.getSangre()+" F. Nac.="+zombie.getNacimiento());
+                            System.out.println("Nombre="+zombie.getNombreZ()+" Salud="+zombie.getSalud()+" T. Sangre="+zombie.getSangre()+" F. Nac.="+zombie.getNacimiento());
                         }
                     }
                      break;          
@@ -153,7 +154,7 @@ public class Principal
                        Zombie zombie= itr.next();
                        if(zombie.getNacimiento()>2000) 
                        {
-                         System.out.println("Nombre="+zombie.getNombre()+" F. Nac.="+zombie.getNacimiento());
+                         System.out.println("Nombre="+zombie.getNombreZ()+" F. Nac.="+zombie.getNacimiento());
                        }
 
                    }
@@ -171,13 +172,12 @@ public class Principal
                      break;   
                 case 7:    
                    System.out.println("Ingrese el nombre Ubicación:");
-                   s1.next();
-                   nombre = s1.nextLine();
+                   nombreU = s1.nextLine();
                    System.out.println("Ingrese cantidad de Zombies de la ubicación:");
                    cantidadZ = s1.nextInt();
                    System.out.println("Ingrese distancia de Alexandria:");
                    distancia = s1.nextFloat();
-                   ubicaciones.add(new Ubicacion(nombre, distancia, cantidadZ));
+                   ubicaciones.add(new Ubicacion(nombreU, distancia, cantidadZ));
                    
                    System.out.println("ubicación registrada. gracias");
 
@@ -216,8 +216,9 @@ public class Principal
                             ubicacionMin= ubicacion;
                             cantMin=ubicacion.getCantidad();
                         }
-                        
+                        System.out.println(ubicacion.getNombre());
                     }
+                    
                     break;
                         
                     
@@ -253,6 +254,7 @@ public class Principal
                             ubicacionMax=ubicacion;
                             ubicacion.getCantidad();
                         }
+                        System.out.println(ubicacion.getNombre());
                     }
 
             }  

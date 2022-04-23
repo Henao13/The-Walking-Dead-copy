@@ -1,7 +1,7 @@
 
 public class Zombie
 {
-    private String nombre;
+    private String nombreZ;
     private int salud;
     private int nacimiento;
     private String sangre;
@@ -10,12 +10,12 @@ public class Zombie
     {
         
     }
-    public Zombie(String nom, String san, int nac, int sal)
+    public Zombie(String nomz, String san, int nac, int sal)
     {
         this.salud= sal;
         this.nacimiento= nac;
         this.sangre= san;
-        this.nombre= nom;
+        this.nombreZ= nomz;
     }
     
     public int getSalud()
@@ -26,9 +26,9 @@ public class Zombie
     {
         return this.nacimiento;
     }
-    public String getNombre()
+    public String getNombreZ()
     {
-        return this.nombre;
+        return this.nombreZ;
     }
     public String getSangre()
     {
@@ -43,9 +43,9 @@ public class Zombie
     {
         this.salud=sal;
     }
-    public void setNombre(String nom)
+    public void setNombre(String nomz)
     {
-        this.nombre=nom;
+        this.nombreZ=nomz;
     }
     public void setSangre(String san)
     {
